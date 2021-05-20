@@ -1,101 +1,147 @@
 <!DOCTYPE html>
-<html lang="es" ng-app="hcApp">
+<html lang="en">
 <head>
-    <title>Historial clinico</title>
-    <meta charset="utf-8"/>
-    <meta name="format-detection" content="telephone=no"/>
-    <meta name="msapplication-tap-highlight" content="no"/>
-    <meta http-equiv="Content-Security-Policy"
-          content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
-    <meta name="viewport"
-          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"/>
-
-    <!--Import Google Icon Font-->
-    <link href="fonts/material-icons/material-icons.css" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
-    <!--Import Font Awesome-->
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px">
+    <title>Maquetación mobile</title>
 </head>
 <body>
+    <header>
+        <figure class="header_figure">
+            <img src="./img/logobata.svg" alt="logo">
+            <span><img src="./img/Batatabit.svg" alt="batatabit"></span>
+        </figure> 
+        <div class="header-title_container">
+            <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
+            <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
+            <a href="#plans" class="header_button">Conoce Nuestros Planes <span></span></a>
+        </div>
+    </header>
+    <main> 
+        <section class="section_container">
+            <div class="backgroundimg"></div>
+            <div class="section_container_title">
+                <h2>Visibilizamos todas las tasas de cambio.</h2>
+                <p>Traemos información en tiempo real de las casa de cambio y las monedas más importantes del mundo</p>
+            </div>
+            <section class="section_container-table">
+                <div class="section_container--moneda">
+                    <p class="section_moneda">Monedas</p>
+                    <div class="monedas_table">
+                        <table>
+                            <tr >
+                                <td class="table__top-left centrar">Bitcoin</td>
+                                <td class="table__top-rigth table__rigth">$1.96 <span class="down"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="">Ethereum</td>
+                                <td class="table__rigth">$0.07 <span class="up"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="centrar">Ripple</td>
+                                <td class="table__rigth">$2.15 <span class="down"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="table__botton-left centrar">Stellar</td>
+                                <td class="table__botton-rigth table__rigth">$4.96 <span class="down"></span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="section_container-actualizado">
+                        <p><b>Actualizado:</b> 19 julio 23:45</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="section__detail">
+            <span class="section__detail--logo"></span>
+            <div class="section__detail--title">
+                <h2>Creamos un producto sin comparación</h2>
+                <p>Confiíable y diseñado para su uso diario.</p>
+            </div>
+            <section class="section__card">
+                <article class="section__card--container">
+                    <span><img src="./icons/hour.svg" alt="iconos"></span>
+                    <p class="section__card--title">Tiempo real</p>
+                    <p class="section__card--body">Nuestra API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
+                </article>
 
+                <article class="section__card--container">
+                    <span><img src="./icons/eye.svg" alt="iconos"></span>
+                    <p class="section__card--title">No ay tasas escondidas</p>
+                    <p class="section__card--body">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estas adquiriendo.</p>
+                </article>
 
-<div ng-view></div>
+                <article class="section__card--container">
+                    <span><img src="./icons/dollar.svg" alt="iconos"></span>
+                    <p class="section__card--title">Compara monedas</p>
+                    <p class="section__card--body">No más rumores, con Babtabit sabrás el valor real de cada moneda en el mercado actual.</p>
+                </article>
 
+                <article class="section__card--container">
+                    <span><img src="./icons/check.svg" alt="iconos"></span>
+                    <p class="section__card--title">Información confiable</p>
+                    <p class="section__card--body">Nuestras fuentes estan 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
+                </article>
+            </section>
+        </section>
+        <section class="section__img">
+            <h2>Conócelo hoy.</h2>
+        </section>
+        <section id="plans" class="section__plans">
+            <div class="section__plans--title">
+                <h2>Escoge el plan que mejor se ajuste a ti.</h2>
+                <p>Cualquier plan te da acceso completo a nuestra plataforma</p> 
+            </div>
+            <section class="section__plans--slider">
+                <article class="plans--card">
+                    <p class="recomendado">Recomendado</p>
+                    <div class="plan-info-container">
+                        <h3 class="plan--card-title">Pago Anual</h3>
+                        <p class="plan--card-price"><span>$</span>99</p>
+                        <p class="plan--card-saving">* Ahorras $129 comparado</p>
+                        <button class="plan--card-ca">Escoger este <span></span></button>
+                    </div>
+                </article>
+
+                <article class="plans--card">
+                    <p class="recomendado">Recomendado</p>
+                    <div class="plan-info-container">
+                        <h3 class="plan--card-title">Pago Anual</h3>
+                        <p class="plan--card-price"><span>$</span>99</p>
+                        <p class="plan--card-saving">* Ahorras $129 comparado</p>
+                        <button class="plan--card-ca">Escoger este <span></span></button>
+                    </div>
+                </article>
+
+                <article class="plans--card">
+                    <p class="recomendado">Recomendado</p>
+                    <div class="plan-info-container">
+                        <h3 class="plan--card-title">Pago Anual</h3>
+                        <p class="plan--card-price"><span>$</span>99</p>
+                        <p class="plan--card-saving">* Ahorras $129 comparado</p>
+                        <button class="plan--card-ca">Escoger este <span></span></button>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section class="left">
+            <ul>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Crunchbase</a></li>
+                <li><a href="#">Hackermews</a></li>
+            </ul>
+        </section>
+        <section class="rigth">
+            <img src="./img/logo3.svg" alt="Logo batata 2021">
+            <p>®Batabit 2021</p>
+        </section>
+    </footer>
 </body>
-<!-- Scripts -->
-<script type="text/javascript" src="cordova.js"></script>
-<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
-<script type="text/javascript" src="js/angular.min.js"></script>
-<script type="text/javascript" src="js/angular-route.min.js"></script>
-<script type="text/javascript">
-    // App
-    var htc = angular.module('hcApp', ['ngRoute']);
-
-    gPacientes = [
-        {id: 1, nombre: "Jose Ramon", edad: 25, sexo: "Hombre", favorito: true},
-        {id: 2, nombre: "Navarro Marquez", edad: 26, sexo: "Mujer", favorito: false}
-    ];
-
-    function getPaciente(id){
-        if(id == 0)
-        return null;
-        else
-        return gPacientes[id -1];
-    }
-
-    var app = {
-        // Application Constructor
-        initialize: function () {
-            console.log("initializing");
-            this.bindEvents();
-            console.log("initializing done");
-        },
-        onLoad: function () {
-        },
-        bindEvents: function () {
-            document.addEventListener('load', this.onLoad, false);
-            document.addEventListener('deviceready', this.onDeviceReady, false);
-            document.addEventListener('online', this.onOnline, false);
-            document.addEventListener('offline', this.onOffline, false);
-        },
-        onDeviceReady: function () {
-        },
-        onOffline: function () {
-        }
-    };
-    // Ruoter
-    htc.config(['$routeProvider',
-        function($routeProvider) {
-            $routeProvider.
-            when('/pacientes', {
-                templateUrl: 'partials/pacientes.html',
-                controller: 'pacientesController'
-            }).
-            when('/pacientes/:pacienteId', {
-                templateUrl: 'partials/pacienteDetalle.html',
-                controller: 'pacienteDetalleController'
-            }).
-            otherwise({
-                redirectTo: '/pacientes'
-            });
-        }]);
-    // Controllers
-    htc.controller('pacientesController', function ($scope) {
-        $scope.pacientes = gPacientes;
-
-        /*for (var i = 0; i < 10; i++) {
-         $scope.pacientes.push({nombre: "A", edad: i});
-         }*/
-    });
-    htc.controller('pacienteDetalleController',['$scope', '$routeParams',
-        function($scope, $routeParams) {
-            $scope.paciente = getPaciente($routeParams.pacienteId);
-        }]
-    );
-    // Punto de inicio
-    app.initialize();
-</script>
 </html>
